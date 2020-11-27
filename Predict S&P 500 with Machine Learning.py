@@ -8,7 +8,7 @@ warnings.filterwarnings('ignore')   # in the process of k-fold cross validation,
 
 ### 2. Data Preparation ------------------------------------------
 
-train = pd.read_csv('C:/Users/brant/Google Drive/extra study/Python/training data set.csv', header = None)
+train = pd.read_csv('.../.../.csv', header = None)
 
 train = train[0].str.split(',', expand=True)    #slipt by comma
 
@@ -120,7 +120,7 @@ score_accuracy(y_test, y_pred_rf)    #1.0, 99.9819%
 
 # the best model is Rondom Forest with max_depth= None, n_estimators= 150
 
-given_test = pd.read_csv('C:/Users/brant/Google Drive/extra study/Python/test data set.csv', header = None)
+given_test = pd.read_csv('.../.../....csv', header = None)
 given_test = given_test[0].str.split(',', expand=True)
 
 y_pred_final = rf.predict(given_test)
